@@ -6,10 +6,16 @@ body{
     background-color: yellow;
 }
 .copyright{
-    padding: 20px;
-    background-color: gray;
+    /* padding: 20px;
+    background-color: gray; */
 }
 .copyright a{
     color: aqua;
     text-decoration: none;
+}
+
+footer{
+    
+    background-color: gray;
+    transform: translateY(56vh);
 }
