@@ -81,20 +81,31 @@ const oneMealCard = (meal) => {
         "https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + meal.idMeal;
     cardLink.style.textDecoration = "none"; 
     cardLink.style.textAlign = "center";
-    cardLink.style.color = "black";    
+    cardLink.style.color = "black"; 
+    // cardLink.style.borderRadius = "20px 20px 0px 0px";    
 
     // Create Card Element
     const card = document.createElement("div");
     card.className = "card";
+    // style on card
+    card.style.boxShadow = "10px 10px 10px gray";
+    card.style.border = "none";
+    card.style.background = "none";
+    card.style.borderRadius = "15px";
 
     // Create Img in cards
     const cardImage = document.createElement("img");
     cardImage.src = meal.strMealThumb;
     cardImage.alt = meal.strMeal;
+    // style
+    cardImage.style.borderRadius = "15px 15px 0px 0px";
 
     // Card Body
     const cardBody = document.createElement("div");
     cardBody.className = "card-body";
+    // style
+    cardBody.style.backgroundColor = "aquamarine";
+    cardBody.style.borderRadius = "0px 0px 15px 15px";
 
     // Card Title
     const cardTitle = document.createElement("h5");
@@ -119,10 +130,12 @@ const oneMealCardWithID = (meal) => {
     // Grid Column
     const col = document.createElement("div");
     col.className = "col-md-6 offset-3";
+  
 
     // Create Card Element
     const card = document.createElement("div");
     card.className = "card";
+    
 
     // Create card Img 
     const cardImage = document.createElement("img");
@@ -149,9 +162,12 @@ const oneMealCardWithID = (meal) => {
         if (ingredient) {
             let li = document.createElement("li");
             let liText = document.createTextNode(ingredient);
+            
             li.appendChild(liText);
 
             ul.appendChild(li);
+            // style
+            li.style.marginLeft = "15%";
         }
     }
 
@@ -177,6 +193,7 @@ const basicCard = (message) => {
     // Create Card Element
     const card = document.createElement("div");
     card.className = "card";
+  
 
     // Card Body
     const cardBody = document.createElement("div");
