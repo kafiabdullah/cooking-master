@@ -17,11 +17,11 @@
 
     <title>Cooking Master</title>
   </head>
-  <body >
+  <body>
     <!-- this is the header section that will add menu -->
     <div class="container-fluid main-nav mb-5">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light  main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light main-menu">
           <a class="navbar-brand" href="index.html">Cooking Master</a>
           <button
             class="navbar-toggler"
@@ -70,6 +70,8 @@
     <!-- start main section of the website -->
     <main>
       <div class="container">
+        <div class="one-meal-container" id="one-meal-container"></div>
+        <!-- search for meal -->
         <form class="d-flex m-5">
           <input
             class="form-control me-2"
@@ -78,23 +80,41 @@
             aria-label="Search"
             id=""
           />
-          <button class="btn btn-outline-success" type="submit" id="">Search</button>
+          <button class="btn btn-outline-success" type="submit" id="">
+            Search
+          </button>
         </form>
       </div>
+
+      <!-- meal box and search verify -->
+      <section class="card-section container">
+        <div id="search-output" class="row">
+          <div class="col-md-6 offset-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title text-center">
+                  Please use search box for search your  desire Meals
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--copyright-->
     <footer>
       <div class="container">
-
-    <section class="copyright p-2">
-      <div class="container text-white text-center">
-        <p>
-         Made By ❤️
-          <a href="https://www.facebook.com/kafiabdullah27" target="_blank">Kafi Abdullah</a>
-        </p>
-      </div>
-    </section>
+        <section class="copyright p-2">
+          <div class="container text-white text-center">
+            <p>
+              Made By ❤️
+              <a href="https://www.facebook.com/kafiabdullah27" target="_blank"
+                >Kafi Abdullah</a
+              >
+            </p>
+          </div>
+        </section>
       </div>
     </footer>
 
