@@ -223,7 +223,7 @@ const basicCard = (message) => {
     col.appendChild(card);
 
     return col;
-    ;
+    
 }
 
 // Function for get element and clean previous child element
