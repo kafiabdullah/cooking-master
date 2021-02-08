@@ -126,72 +126,7 @@ const oneMealCard = (meal) => {
     return col;
 };
 
-// Method for create  one card for meal
-const oneMealCardWithID = (meal) => {
-    // Grid Column
-    const col = document.createElement("div");
-    col.className = "col-md-6 offset-3";
-  
 
-    // Create Card Element
-    const card = document.createElement("div");
-    card.className = "card";
-    // style
-    card.style.boxShadow = "10px 10px 10px gray";
-    card.style.border = "none";
-    
-    card.style.borderRadius = "15px";
-    
-
-    // Create card Img 
-    const cardImage = document.createElement("img");
-    cardImage.src = meal.strMealThumb;
-    cardImage.alt = meal.strMeal;
-    // style
-    cardImage.style.borderRadius = "15px 15px 0px 0px";
-
-    // Card Body
-    const cardBody = document.createElement("div");
-    cardBody.className = "card-body";
-
-    // Card Title
-    const cardTitle = document.createElement("h5");
-    cardTitle.className = "card-title";
-    const cardTitleText = document.createTextNode(meal.strMeal);
-    cardTitle.appendChild(cardTitleText);
-
-    // Ingredients
-    const ul = document.createElement("ul");
-
-    for (let i = 1; i <= 20; i++) {
-        let ingredient = meal[`strIngredient${i}`];
-        console.log(ingredient);
-
-        if (ingredient) {
-            let li = document.createElement("li");
-            let liText = document.createTextNode(ingredient);
-            
-            li.appendChild(liText);
-
-            ul.appendChild(li);
-            // style
-            li.style.marginLeft = "15%";
-            
-        }
-    }
-
-    // Add cardTitle to CardBody
-    cardBody.appendChild(cardTitle);
-
-    // Add image to card body
-    card.appendChild(cardImage);
-    card.appendChild(cardBody);
-    card.appendChild(ul);
-
-    col.appendChild(card);
-
-    return col;
-};
 
 // Basic card display with message
 const basicCard = (message) => {
