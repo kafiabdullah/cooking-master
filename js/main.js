@@ -71,6 +71,7 @@ const oneMealCard = (meal) => {
     col.className = "col-md-3";
     col.style.margin = "10px";
     col.style.padding = "10px";
+    col.style.maxHeight = "500px";
     
 
     // Link
@@ -78,7 +79,9 @@ const oneMealCard = (meal) => {
     cardLink.className = "one-meal";
     cardLink.href =
         "https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + meal.idMeal;
-    cardLink.style.textDecoration = "none";    
+    cardLink.style.textDecoration = "none"; 
+    cardLink.style.textAlign = "center";
+    cardLink.style.color = "black";    
 
     // Create Card Element
     const card = document.createElement("div");
