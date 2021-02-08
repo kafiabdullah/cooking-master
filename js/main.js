@@ -225,3 +225,10 @@ const basicCard = (message) => {
     return col;
 }
 
+// Function for get element and clean previous child element
+const getDocumentClean = (documentsID) => {
+    const documentElement = document.getElementById(documentsID);
+    documentElement.innerHTML = "";
+
+    return documentElement;
+}
