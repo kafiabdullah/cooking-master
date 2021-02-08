@@ -69,6 +69,7 @@ const oneMealCard = (meal) => {
     // Grid Column
     const col = document.createElement("div");
     col.className = "col-md-3";
+    // style
     col.style.margin = "10px";
     col.style.padding = "10px";
     col.style.maxHeight = "500px";
@@ -135,12 +136,19 @@ const oneMealCardWithID = (meal) => {
     // Create Card Element
     const card = document.createElement("div");
     card.className = "card";
+    // style
+    card.style.boxShadow = "10px 10px 10px gray";
+    card.style.border = "none";
+    
+    card.style.borderRadius = "15px";
     
 
     // Create card Img 
     const cardImage = document.createElement("img");
     cardImage.src = meal.strMealThumb;
     cardImage.alt = meal.strMeal;
+    // style
+    cardImage.style.borderRadius = "15px 15px 0px 0px";
 
     // Card Body
     const cardBody = document.createElement("div");
@@ -168,6 +176,7 @@ const oneMealCardWithID = (meal) => {
             ul.appendChild(li);
             // style
             li.style.marginLeft = "15%";
+            
         }
     }
 
